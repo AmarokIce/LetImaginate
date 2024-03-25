@@ -113,7 +113,7 @@ processResources {
     inputs.property "url", project.url
     inputs.property "authorList", [project.authorList]
     inputs.property "logo", project.logo
-    inputs.property "dependencies", dependenciesList
+    // inputs.property "dependencies", dependenciesList
 
     filesMatching("mcmod.info") {
         expand  'modversion': project.version,
@@ -122,9 +122,9 @@ processResources {
                 'modname': project.modName,
                 'modid': project.modId,
                 'url': project.url,
-                'authorList': [project.authorList],
-                'logo': project.logo,
-                'dependencies': dependenciesList
+                'authorList': project.authorList,
+                'logo': project.logo
+                // 'dependencies': dependenciesList
     }
 }
 

@@ -10,7 +10,7 @@
       "authorList": [${authorList}],
       "credits": ${authorList},
       "logoFile": "${logo}",
-      "screenshots": [],
-      "dependencies": ${dependencies}
+      "screenshots": "",
+      "dependencies": [""]
     }
 ]
